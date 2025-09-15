@@ -1,0 +1,90 @@
+# Nhập
+
+#### Nhập từ bàn phím
+```java
+import java.util.Scanner 
+```
+Bước 1: Tạo đổi tượng scanner:  
+```java
+Scanner scanner = new Scanner(System.in);
+```
+Bước 2: sử dụng các phương thức được cung cấp sẵn   
+<b>scanner.nextLine()</b> => nhận 1 dòng nhập từ bàn phím => trả ra dữ liệu string   
+<b>scanner.nextInt()</b> => nhận 1 số nguyên từ bàn phím => trả ra dữ liệu số nguyên     
+<b>scanner.nextDouble()</b> => nhận 1 số thực từ bàn phím => trả ra dữ liệu số thực   
+
+# Xuất
+Trong Java, có 3 cách in ra màn hình:  
+● Với Print: Xuất kết quả ra màn hình nhưng con trỏ chuột không xuống dòng.  
+● Với Println: Xuất kết quả ra màn hình đồng thời con trỏ chuột nhảy xuống dòng tiếp theo.  
+● Với Printf: Xuất ra màng hình kết quả đồng thời có thể định dạng được kết quả đó nhờ vào các đối số thích hợp.  
+
+
+### Sử dụng
+
+<b>Print:</b>
+
+```java
+public class Print {
+    public static void main(String[] args) {
+        System.out.print("Tôi yêu lập trình.");
+        System.out.print("Thích Java và uống cafe.");
+    }
+}
+```
+
+<b>Println:</b>
+
+```java
+public class Print {
+    public static void main(String[] args) {
+        System.out.println("Tôi yêu lập trình.");
+        System.out.println("Thích Java và uống cafe.");
+    }
+}
+```
+
+<b>Printf:</b>
+
+```java
+public class Printf {
+    public static void main(String[] args) {
+        System.out.printf("%s\n%s", "Tôi yêu lập trình.", "Thích Java và uống cafe.");
+    }
+}
+ ```
+
+## printf
+
+#### Cú pháp 
+```java 
+System.out.printf(local, format, arguments1, arguments2,…, argumentsn);
+```
+
+Trong đó:
+  
++ Local: Nếu khác null sẽ được tự động định dạng theo khu vực.  
++ format: Quy định chuẩn định dạng đầu ra cho các đối số  
++ Các argument: Đối số cần định dạng.  
+
+Các bộ định dạng có sẵn trong Printf:
+
+❁ <b>%c</b>: Ký tự  
+❁ <b>%d</b>: Số thập phân (số nguyên) (cơ số 10)  
+❁ <b>%e</b>: Dấu phẩy động theo cấp số nhân  
+❁ <b>%f</b>: Dấu phẩy động  
+❁ <b>%i</b>: Số nguyên (cơ sở 10)  
+❁ <b>%o</b>: Số bát phân (cơ sở 8)  
+❁ <b>%s</b>: Chuỗi  
+❁ <b>%u</b>: Số thập phân (số nguyên) không dấu  
+❁ <b>%x</b>: Số trong hệ thập lục phân (cơ sở 16)  
+❁ <b>%t</b>: Định dạng ngày / giờ  
+❁ <b>%%</b>: Dấu phần trăm  
+❁ <b>\%</b>: Dấu phần trăm  
+
+## print & println
+| Hàm         | Mô tả                                                                 | Ghi chú                     |
+|-------------|----------------------------------------------------------------------|-----------------------------|
+| `println()` | Thêm một dòng mới sau khi in một đoạn văn bản bất kỳ                 | Có thể hoạt động khi không có thông số đầu vào, đơn giản là thêm một dòng mới. |
+| `print()`   | Không thêm dòng mới sau khi in ra một đoạn văn bản                   | Để gọi phải truyền vào tham số. |
+
