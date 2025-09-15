@@ -67,4 +67,9 @@ Các bộ định dạng có sẵn trong Printf:
 ❁ <b>%%</b>: Dấu phần trăm  
 ❁ <b>\%</b>: Dấu phần trăm  
 
+## print & println
+| Hàm         | Mô tả                                                                 | Ghi chú                     |
+|-------------|----------------------------------------------------------------------|-----------------------------|
+| `println()` | Thêm một dòng mới sau khi in một đoạn văn bản bất kỳ                 | Có thể hoạt động khi không có thông số đầu vào, đơn giản là thêm một dòng mới. |
+| `print()`   | Không thêm dòng mới sau khi in ra một đoạn văn bản                   | Để gọi phải truyền vào tham số. |
 
