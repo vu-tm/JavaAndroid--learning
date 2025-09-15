@@ -1,3 +1,18 @@
+# Nhập
+
+#### Nhập từ bàn phím
+```java
+import java.util.Scanner 
+```
+Bước 1: Tạo đổi tượng scanner:  
+```java
+Scanner scanner = new Scanner(System.in);
+```
+Bước 2: sử dụng các phương thức được cung cấp sẵn   
+<b>scanner.nextLine()</b> => nhận 1 dòng nhập từ bàn phím => trả ra dữ liệu string   
+<b>scanner.nextInt()</b> => nhận 1 số nguyên từ bàn phím => trả ra dữ liệu số nguyên     
+<b>scanner.nextDouble()</b> => nhận 1 số thực từ bàn phím => trả ra dữ liệu số thực   
+
 # Xuất
 Trong Java, có 3 cách in ra màn hình:  
 ● Với Print: Xuất kết quả ra màn hình nhưng con trỏ chuột không xuống dòng.  
