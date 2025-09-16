@@ -1,18 +1,25 @@
 # Mảng
 ## Mảng một chiều
-### Cú pháp:
+#### Cú pháp:
 ```<kiểu dữ liệu>[<kích thước>];```
 <br> 
-
+#### Khai báo:
+```java
+<kiểu dữ liệu>[] <tên mảng>; // mảng 1 chiều
+<kiểu dữ liệu> <tên mảng>[]; // mảng 1 chiều
+```
+<br>
 ---
+
 ## Mảng đa chiều
-### Cú pháp:
+#### Cú pháp:
 ```<kiểu dữ liệu>[<số hàng>][<số cột>];```
 <br> 
-
----
-### Khai báo
-```<kiểu dữ liệu>[] <tên mảng>```
+#### Khai báo
+```
+<kiểu dữ liệu>[][] <tên mảng>; // mảng 2 chiều
+<kiểu dữ liệu> <tên mảng>[][]; // mảng 2 chiều
+```
 <br> 
 
 ---
