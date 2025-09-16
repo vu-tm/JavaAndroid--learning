@@ -1,27 +1,34 @@
 # Mảng
 ## Mảng một chiều
-### Cú pháp:
+#### Cú pháp:
 ```<kiểu dữ liệu>[<kích thước>];```
 <br> 
-
+#### Khai báo:
+```java
+<kiểu dữ liệu>[] <tên mảng>; // mảng 1 chiều
+<kiểu dữ liệu> <tên mảng>[]; // mảng 1 chiều
+```
+<br>
 ---
+
 ## Mảng đa chiều
-### Cú pháp:
+#### Cú pháp:
 ```<kiểu dữ liệu>[<số hàng>][<số cột>];```
 <br> 
-
----
-### Khai báo
-```<kiểu dữ liệu>[] <tên mảng>```
+#### Khai báo
+```
+<kiểu dữ liệu>[][] <tên mảng>; // mảng 2 chiều
+<kiểu dữ liệu> <tên mảng>[][]; // mảng 2 chiều
+```
 <br> 
 
 ---
-### Khởi tại
+#### Khởi tại
 ```kiểuDữLiệu[] tênMảng = new kiểuDữLiệu[kíchThướcMảng];```
 <br> 
 
 ---
-### Gán giá trị
+#### Gán giá trị
 ```<tên_mảng>[<chỉ_số>] = <giá_trị>;```
 <br> 
 Ví dụ, để gán giá trị 10 cho phần tử thứ 2 trong mảng myArray:<br> 
@@ -35,6 +42,19 @@ myArray[2] = 10;
 Trong Java, chúng ta cũng có thể khai báo, khởi tạo và gán giá trị cho mảng đồng thời trong cùng một dòng mã.   
 Để làm điều này, chúng ta sử dụng cú pháp:   
 ```type[] arrayName = {value1, value2, value3, …};```
+<br>
+
+---
+## Kiểu đối tượng
+#### Khai báo đối tượng
+``` <Kiểu đối tượng>  <biến ĐT>;```
+#### Khởi tạo đối tượng
+ ```<Kiểu đối tượng>  <biến ĐT> = new <Kiểu đối tượng>;```
+ #### Truy xuất thành phần đối tượng
+ ```
+ <biến ĐT>.<thuộc tính>
+ <biến ĐT>.<phương thức>
+```
 <br>
 
 ---
