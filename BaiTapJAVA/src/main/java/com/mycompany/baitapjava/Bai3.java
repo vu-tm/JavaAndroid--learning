@@ -8,8 +8,6 @@ package com.mycompany.baitapjava;
  * – Tìm phần tử lẻ lớn nhất.
  * – Tìm dòng có tổng lớn nhất.
  * – Tính tổng các số không phải là số nguyên tố.
- * Nhập vào ngày tháng năm
- * In ra ngày kế tiếp
  */
 public class Bai3 {
 

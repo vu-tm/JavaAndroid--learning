@@ -29,6 +29,10 @@ public class BaiTapJAVA {
                 Bai3 bai3 = new Bai3();
                 bai3.run();
                 break;
+            case 4:
+                Bai4 bai4 = new Bai4();
+                bai4.run();
+                break;
             default:
                 System.out.println("Vui long nhap lai!");
         }
