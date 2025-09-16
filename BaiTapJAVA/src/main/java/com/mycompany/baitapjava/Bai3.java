@@ -34,6 +34,28 @@ public class Bai3 {
         System.out.println("Phan tu nho nhat: " + min);
     }
 
+    public void TongDongLargest(int arr[][], int n, int m) {
+
+    }
+
+    public void TimLeLargest(int arr[][], int n, int m) {
+        int maxLe = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (arr[i][j] % 2 != 0) {
+                    if (arr[i][j] < arr[i][j + 1]) {
+                        maxLe = arr[i][j + 1];
+                    }
+                }
+            }
+        }
+        if (maxLe == 0) {
+            System.out.println("Khong co phan tu le");
+        } else {
+            System.out.println("Phan tu le lon nhat: " + maxLe);
+        }
+    }
+
     public void run() {
         Scanner sc = new Scanner(System.in);
         System.out.print("n = ");
@@ -49,5 +71,7 @@ public class Bai3 {
             }
         }
         In(arr, n, m);
+        TimMin(arr, n, m);
+        TimLeLargest(arr, n, m);
     }
 }
