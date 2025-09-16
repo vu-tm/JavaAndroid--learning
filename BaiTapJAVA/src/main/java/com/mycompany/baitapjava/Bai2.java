@@ -24,8 +24,8 @@ public class Bai2 {
     public void TimMax(int arr[], int n) {
         int max = arr[0];
         for (int i = 0; i < n - 1; i++) {
-            if (arr[i] < arr[i + 1]) {
-                max = arr[i + 1];
+            if (arr[i] > max) {
+                max = arr[i];
             }
         }
         System.out.println("Phan tu lon nhat: " + max);
@@ -44,8 +44,8 @@ public class Bai2 {
     public void TimMin(int arr[], int n) {
         int min = arr[0];
         for (int i = 0; i < n - 1; i++) {
-            if (arr[i] > arr[i + 1]) {
-                min = arr[i + 1];
+            if (arr[i] < min) {
+                min = arr[i];
             }
         }
         System.out.print("Phan tu nho nhat: " + min);

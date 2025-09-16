@@ -3,6 +3,7 @@ package com.mycompany.baitapjava;
 /**
  * - Nhập vào ngày tháng năm
  * - In ra ngày kế tiếp
+ * -> Test 3 trường hợp : Ngày bình thường, ngày cuối tháng, ngày cuối năm
  */
 public class Bai4 {
 
