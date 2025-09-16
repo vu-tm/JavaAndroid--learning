@@ -53,7 +53,7 @@ public class Bai3 {
                 maxIndex = i;
             }
         }
-        System.out.println("Dong " + maxIndex + 1 + " co tong lon nhat: " + maxDong);
+        System.out.println("Dong " + (maxIndex + 1) + " co tong lon nhat: " + maxDong);
     }
 
     public void TimLeLargest(int arr[][], int n, int m) {
@@ -74,6 +74,30 @@ public class Bai3 {
         }
     }
 
+    public boolean isNguyenTo(int n) {
+        if (n < 2) {
+            return false;
+        }
+        for (int i = 2; i * i <= n; i++) {
+            if (n % i == 0) {
+                return false;
+            }
+        }
+        return true;
+    }
+
+    public void TongKhongNguyenTo(int arr[][], int n, int m) {
+        int sum = 0;
+        for (int i = 0; i < n; i++) {
+            for (int j = 0; j < m; j++) {
+                if (!isNguyenTo(arr[i][j])) {
+                    sum+=arr[i][j];
+                }
+            }
+        }
+        System.out.println("Tong cua cac so khong phai nguyen to: " + sum);
+    }
+
     public void run() {
         Scanner sc = new Scanner(System.in);
         System.out.print("n = ");
@@ -92,5 +116,6 @@ public class Bai3 {
         TimMin(arr, n, m);
         TimLeLargest(arr, n, m);
         TongDongLargest(arr, n, m);
+        TongKhongNguyenTo(arr, n, m);
     }
 }
