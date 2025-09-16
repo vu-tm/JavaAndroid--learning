@@ -14,6 +14,7 @@ import java.util.Scanner;
 public class Bai3 {
 
     public void In(int arr[][], int n, int m) {
+        System.out.println("Mang 2 chieu: ");
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 System.out.print(arr[i][j] + " ");
@@ -35,16 +36,33 @@ public class Bai3 {
     }
 
     public void TongDongLargest(int arr[][], int n, int m) {
+        // Tính dòng đầu tiên
+        int maxDong = 0;
+        for (int k = 0; k < m; k++) {
+            maxDong += arr[0][k];
+        }
 
+        int maxIndex = 0;
+        for (int i = 1; i < n; i++) {
+            int sum = 0;
+            for (int j = 0; j < m; j++) {
+                sum += arr[i][j];
+            }
+            if (sum > maxDong) {
+                maxDong = sum;
+                maxIndex = i;
+            }
+        }
+        System.out.println("Dong " + maxIndex + 1 + " co tong lon nhat: " + maxDong);
     }
 
     public void TimLeLargest(int arr[][], int n, int m) {
-        int maxLe = 0;
+        int maxLe = arr[0][0];
         for (int i = 0; i < n; i++) {
             for (int j = 0; j < m; j++) {
                 if (arr[i][j] % 2 != 0) {
-                    if (arr[i][j] < arr[i][j + 1]) {
-                        maxLe = arr[i][j + 1];
+                    if (arr[i][j] > maxLe) {
+                        maxLe = arr[i][j];
                     }
                 }
             }
@@ -73,5 +91,6 @@ public class Bai3 {
         In(arr, n, m);
         TimMin(arr, n, m);
         TimLeLargest(arr, n, m);
+        TongDongLargest(arr, n, m);
     }
 }
