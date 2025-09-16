@@ -13,7 +13,7 @@ public class BaiTapJAVA {
 
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        System.out.print("Chon cau (1-2): ");
+        System.out.print("Chon cau (1-3): ");
         int choice = sc.nextInt();
 
         switch (choice) {
